@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" fill="#ffffff"/>
+  <title>Manpower Icon</title>
+  <g fill="none" stroke="#000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Center person -->
+    <circle cx="100" cy="60" r="18"/>
+    <path d="M80 130 V110 C80 95 90 85 100 85 C110 85 120 95 120 110 V130 Z"/>
+    <!-- Left person -->
+    <circle cx="60" cy="68" r="14"/>
+    <path d="M45 130 V112 C45 100 54 92 65 92"/>
+    <!-- Right person -->
+    <circle cx="140" cy="68" r="14"/>
+    <path d="M155 130 V112 C155 100 146 92 135 92"/>
+  </g>
+</svg>

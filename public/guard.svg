@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" fill="#ffffff"/>
+  <title>Security Guard Icon</title>
+  <g fill="none" stroke="#000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M100 20 L160 40 V90 C160 135 130 165 100 180 C70 165 40 135 40 90 V40 Z"/>
+    <path d="M100 45 V150"/>
+    <path d="M85 80 H115"/>
+  </g>
+</svg>

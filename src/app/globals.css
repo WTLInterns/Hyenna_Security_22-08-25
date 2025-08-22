@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: radial-gradient(1200px 600px at 20% -10%, rgba(255, 200, 200, 0.15), transparent 60%),
+              radial-gradient(1000px 500px at 110% 10%, rgba(255, 220, 180, 0.18), transparent 60%),
+              linear-gradient(180deg, #fff, #fff);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Section helpers */
+.section-container { max-width: 72rem; margin: 0 auto; padding: 4rem 1rem; }
+.section-muted { background: linear-gradient(180deg, #fafafa, #ffffff); }
+.section-hero { background: linear-gradient(135deg, #ffffff 0%, #fff7f7 35%, #ffffff 100%); }
+
+/* Improve iframe responsiveness */
+.responsive-iframe { position: relative; width: 100%; padding-bottom: 130%; }
+.responsive-iframe iframe { position: absolute; width: 100%; height: 100%; left: 0; top: 0; border: 0; }
