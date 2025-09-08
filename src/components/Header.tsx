@@ -33,7 +33,7 @@ export default function Header() {
   }
 
   const handleWhatsAppRedirect = () => {
-    const phoneNumber = '919284490400'
+    const phoneNumber = '9284490400'
     const message = 'Hello! I am interested in getting a quote for security services from HYENNA SECURITY SERVICES.'
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, '_blank')

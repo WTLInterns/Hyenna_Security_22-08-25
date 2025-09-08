@@ -173,7 +173,7 @@ export default function FAQs() {
                              <h3 className="text-xl font-bold text-white mb-4">Phone Number</h3>
               <p className="text-blue-100 text-lg mb-4">+91 92844 90400</p>
               <p className="text-blue-100 text-lg">+91 8087876112</p>
-                               <a href="tel:+919284490400" className="inline-flex items-center justify-center rounded-lg bg-white text-blue-600 px-6 py-3 mt-4 font-semibold hover:bg-gray-100 transition-colors">
+                               <a href="tel:9284490400" className="inline-flex items-center justify-center rounded-lg bg-white text-blue-600 px-6 py-3 mt-4 font-semibold hover:bg-gray-100 transition-colors">
                    Call Now
                  </a>
             </div>
@@ -186,7 +186,7 @@ export default function FAQs() {
               </div>
               <h3 className="text-xl font-bold text-white mb-4">WhatsApp</h3>
                              <p className="text-blue-100 text-lg mb-4">Instant Contact</p>
-               <a href="https://wa.me/919284490400?text=Hi%20HYENNA%20SECURITY%20SERVICES,%20I%20have%20a%20question%20about%20security%20services." target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-lg bg-green-600 text-white px-6 py-3 mt-4 font-semibold hover:bg-green-700 transition-colors">
+               <a href="https://wa.me/9284490400?text=Hi%20HYENNA%20SECURITY%20SERVICES,%20I%20have%20a%20question%20about%20security%20services." target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-lg bg-green-600 text-white px-6 py-3 mt-4 font-semibold hover:bg-green-700 transition-colors">
                  Send WhatsApp Message
                </a>
             </div>

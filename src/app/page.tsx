@@ -8,7 +8,9 @@ export default function Home() {
     '/gallery1.png',
     '/gallery2.png',
     '/gallery3.png',
+    '/gallery4.jpg',
   ]
+
   // Removed gallery/lightbox state per user request
 
   useEffect(() => {
@@ -29,7 +31,12 @@ export default function Home() {
               key={src}
               src={src}
               alt={`Background ${idx + 1}`}
-              className={`absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-1200 ${idx === slide ? 'opacity-100' : 'opacity-0'}`}
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1200 ${
+                idx === slide ? 'opacity-100' : 'opacity-0'
+              } ${
+                // Custom positioning for gallery4.jpg to ensure proper fit
+                src === '/gallery4.jpg' ? 'object-center' : 'object-top'
+              }`}
             />
           ))}
           {/* Dark gradient overlay for better text readability */}
@@ -50,7 +57,7 @@ export default function Home() {
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLMurn6R0SDdlUZajmlMhFfU_dm83qRWZLceQRe0bLX1sztA/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-lg bg-blue-600 text-white px-7 py-3.5 text-base font-semibold hover:bg-blue-700 transition-colors shadow-lg">
                   Request Free Trial
                 </a>
-                                 <a href="https://wa.me/919284490400?text=Hi%20HYENNA%20SECURITY%20SERVICES,%20I%20would%20like%20to%20get%20a%20quote%20for%20security%20services." target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-lg border-2 border-white text-white px-7 py-3.5 text-base font-semibold hover:bg-white hover:text-gray-900 transition-colors">
+                                 <a href="https://wa.me/9284490400?text=Hi%20HYENNA%20SECURITY%20SERVICES,%20I%20would%20like%20to%20get%20a%20quote%20for%20security%20services." target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-lg border-2 border-white text-white px-7 py-3.5 text-base font-semibold hover:bg-white hover:text-gray-900 transition-colors">
                   Get a Quote
                 </a>
               </div>
