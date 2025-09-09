@@ -1,12 +1,21 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false)
   const [dropdownTimeout, setDropdownTimeout] = useState<NodeJS.Timeout | null>(null)
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -40,7 +49,11 @@ export default function Header() {
   }
 
   return (
-         <header className="sticky top-0 z-50 bg-white/85 backdrop-blur-sm shadow-lg border-b border-gray-200">
+         <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+           isScrolled 
+             ? 'bg-white/95 backdrop-blur-md shadow-xl border-b border-gray-200' 
+             : 'bg-white/80 backdrop-blur-sm shadow-md'
+         }`}>
        <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
          <Link href="/" className="flex items-center gap-3 group" onClick={closeMenu}>
            <div className="h-12 w-12 rounded-full overflow-hidden shadow-sm group-hover:shadow-md transition-shadow bg-white relative">
@@ -121,25 +134,29 @@ export default function Header() {
 
                  {/* Mobile menu button */}
          <button 
-           className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+           className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-all duration-200 active:scale-95"
            onClick={toggleMenu}
            aria-label="Toggle mobile menu"
          >
-           {isMenuOpen ? (
-             <svg className="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-             </svg>
-           ) : (
-             <svg className="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-             </svg>
-           )}
+           <div className="relative w-6 h-6">
+             <span className={`absolute block h-0.5 w-6 bg-gray-700 transform transition-all duration-300 ${
+               isMenuOpen ? 'rotate-45 top-3' : 'top-1'
+             }`}></span>
+             <span className={`absolute block h-0.5 w-6 bg-gray-700 transform transition-all duration-300 ${
+               isMenuOpen ? 'opacity-0' : 'top-3'
+             }`}></span>
+             <span className={`absolute block h-0.5 w-6 bg-gray-700 transform transition-all duration-300 ${
+               isMenuOpen ? '-rotate-45 top-3' : 'top-5'
+             }`}></span>
+           </div>
          </button>
       </div>
 
              {/* Mobile Navigation Menu */}
-       {isMenuOpen && (
-         <div className="md:hidden bg-white/95 backdrop-blur-sm border-t border-gray-200 shadow-lg">
+       <div className={`md:hidden overflow-hidden transition-all duration-300 ${
+         isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+       }`}>
+         <div className="bg-white/95 backdrop-blur-sm border-t border-gray-200 shadow-lg">
            <nav className="px-6 py-4 space-y-4">
              <Link 
                href="/" 
@@ -219,7 +236,7 @@ export default function Header() {
              </button>
           </nav>
         </div>
-      )}
+      </div>
     </header>
   )
 }
