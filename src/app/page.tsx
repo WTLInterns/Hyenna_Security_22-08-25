@@ -14,8 +14,8 @@ export default function Home() {
     'gallery1.png',
     'gallery2.png',
     'gallery3.png',
-    '/herosection.png',
-    '/herosection2.jpeg',
+    'herosection.png',
+    'herosection2.jpeg',
   ]
 
   useEffect(() => {
@@ -39,7 +39,7 @@ export default function Home() {
 
   return (
     <div className={`transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-      {/* Hero - Full background slideshow with overlayed content */}
+      {/* Hero - Full background video with overlayed content */}
       <section className="relative overflow-hidden min-h-screen pt-20 md:pt-16">
         {/* Slides */}
         <div className="absolute inset-0">
@@ -218,52 +218,68 @@ export default function Home() {
         </div>
       </section>
 
-                                                       {/* Services Overview */}
-         <section className="py-20 bg-gradient-to-br from-blue-50 to-blue-100 relative overflow-hidden">
-           <div className="absolute inset-0 bg-blue-200/30"></div>
-           <div className="max-w-7xl mx-auto px-6 relative z-10">
-             <div className="text-center mb-16">
-               <div className="inline-flex items-center gap-2 bg-blue-600/10 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-6 backdrop-blur-sm border border-blue-200">
-                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                 </svg>
-                 Comprehensive Security Solutions
-               </div>
-               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Services We Provide</h2>
-               <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-                 Trusted security services in Maharashtra including trained guards, lady guards, bouncers and housekeeping for IT Companies, industrial and corporate needs. 
-                 We deliver comprehensive security solutions tailored to your specific requirements.
-               </p>
-                </div>
+             {/* Services Overview */}
+       <section className="py-20 bg-gradient-to-br from-blue-50 to-blue-100 relative overflow-hidden">
+         <div className="absolute inset-0 bg-blue-200/30"></div>
+         <div className="max-w-7xl mx-auto px-6 relative z-10">
+           <div className="text-center mb-16">
+             <div className="inline-flex items-center gap-2 bg-blue-600/10 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-6 backdrop-blur-sm border border-blue-200">
+               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+               </svg>
+               Comprehensive Security Solutions
+             </div>
+             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Services We Provide</h2>
+             <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+               Trusted security services in Maharashtra including trained guards, lady guards, bouncers and housekeeping for IT Companies, industrial and corporate needs. 
+               We deliver comprehensive security solutions tailored to your specific requirements.
+             </p>
+           </div>
             
-                         {/* Service Highlights */}
-             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-               <div className="bg-white rounded-2xl p-8 text-center shadow-lg border border-blue-100">
-                 <img src="/swp1.png" alt="Security Guards" className="w-24 h-24 rounded-full object-cover mx-auto mb-6" />
-                 <h3 className="text-lg font-bold text-gray-900 mb-2">Security Guards</h3>
+           {/* Service Highlights */}
+           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+             <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-blue-100 hover:shadow-xl transition-all group">
+               <div className="h-64 w-full overflow-hidden">
+                 <img src="/swp1.png" alt="Security Guards" className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-300" />
+               </div>
+               <div className="p-6 text-left">
+                 <h3 className="text-xl font-bold text-gray-900 mb-2">Security Guards</h3>
                  <p className="text-gray-600 text-sm">Licensed & trained personnel</p>
-                </div>
-               
-               <div className="bg-white rounded-2xl p-8 text-center shadow-lg border border-blue-100">
-                 <img src="/swp2.png" alt="Event Bouncers" className="w-24 h-24 rounded-full object-cover mx-auto mb-6" />
-                 <h3 className="text-lg font-bold text-gray-900 mb-2">Event Bouncers</h3>
+               </div>
+             </div>
+             
+             <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-blue-100 hover:shadow-xl transition-all group">
+               <div className="h-64 w-full overflow-hidden">
+                 <img src="/swp2.png" alt="Event Bouncers" className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-300" />
+               </div>
+               <div className="p-6 text-left">
+                 <h3 className="text-xl font-bold text-gray-900 mb-2">Event Bouncers</h3>
                  <p className="text-gray-600 text-sm">Professional crowd control</p>
-            </div>
-               
-               <div className="bg-white rounded-2xl p-8 text-center shadow-lg border border-blue-100">
-                 <img src="/swp3.png" alt="Staffing Solutions" className="w-24 h-24 rounded-full object-cover mx-auto mb-6" />
-                 <h3 className="text-lg font-bold text-gray-900 mb-2">Staffing Solutions</h3>
+               </div>
+             </div>
+             
+             <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-blue-100 hover:shadow-xl transition-all group">
+               <div className="h-64 w-full overflow-hidden">
+                 <img src="/swp3.png" alt="Staffing Solutions" className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-300" />
+               </div>
+               <div className="p-6 text-left">
+                 <h3 className="text-xl font-bold text-gray-900 mb-2">Staffing Solutions</h3>
                  <p className="text-gray-600 text-sm">Flexible manpower supply</p>
-              </div>
-               
-               <div className="bg-white rounded-2xl p-8 text-center shadow-lg border border-blue-100">
-                 <img src="/swp4.png" alt="Private Security" className="w-24 h-24 rounded-full object-cover mx-auto mb-6" />
-                 <h3 className="text-lg font-bold text-gray-900 mb-2">Private Security</h3>
+               </div>
+             </div>
+             
+             <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-blue-100 hover:shadow-xl transition-all group">
+               <div className="h-64 w-full overflow-hidden">
+                 <img src="/swp4.png" alt="Private Security" className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-300" />
+               </div>
+               <div className="p-6 text-left">
+                 <h3 className="text-xl font-bold text-gray-900 mb-2">Private Security</h3>
                  <p className="text-gray-600 text-sm">Personal & VIP protection services</p>
-            </div>
-          </div>
-        </div>
-      </section>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
 
              {/* Why Choose Us Section */}
        <section className="py-20 bg-white">
@@ -284,35 +300,41 @@ export default function Home() {
            
            {/* Why Choose Us Grid */}
            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
-              <div className="w-16 h-16 md:w-20 md:h-20 rounded-xl overflow-hidden mb-6">
-                <img src="/ils1.png" alt="Trusted & Reliable" className="w-full h-full object-cover" />
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+              <div className="h-64 w-full overflow-hidden">
+                <img src="/ils1.png" alt="Trusted & Reliable" className="w-full h-full object-cover object-top" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Trusted & Reliable</h3>
-              <p className="text-gray-600 leading-relaxed">
-                With over 15 years of experience and 100+ satisfied clients, we&apos;ve built a reputation for trust,
-                reliability, and exceptional service delivery.
-              </p>
+              <div className="p-8">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Trusted & Reliable</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  With over 15 years of experience and 100+ satisfied clients, we&apos;ve built a reputation for trust,
+                  reliability, and exceptional service delivery.
+                </p>
+              </div>
             </div>
-            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
-              <div className="w-16 h-16 md:w-20 md:h-20 rounded-xl overflow-hidden mb-6">
-                <img src="/ils2.png" alt="Quick Response" className="w-full h-full object-cover" />
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+              <div className="h-64 w-full overflow-hidden">
+                <img src="/ils2.png" alt="Quick Response" className="w-full h-full object-cover object-top" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quick Response</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Rapid deployment capabilities with emergency backup personnel and 24/7 support ensure
-                immediate response to any security situation.
-              </p>
+              <div className="p-8">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Quick Response</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Rapid deployment capabilities with emergency backup personnel and 24/7 support ensure
+                  immediate response to any security situation.
+                </p>
+              </div>
             </div>
-            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
-              <div className="w-16 h-16 md:w-20 md:h-20 rounded-xl overflow-hidden mb-6">
-                <img src="/ils3.png" alt="24/7 Availability" className="w-full h-full object-cover" />
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+              <div className="h-64 w-full overflow-hidden">
+                <img src="/ils3.png" alt="24/7 Availability" className="w-full h-full object-cover object-top" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">24/7 Availability</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Round-the-clock security monitoring and support with continuous supervision and
-                immediate backup personnel availability.
-              </p>
+              <div className="p-8">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">24/7 Availability</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Round-the-clock security monitoring and support with continuous supervision and
+                  immediate backup personnel availability.
+                </p>
+              </div>
             </div>
           </div>
            
@@ -331,20 +353,23 @@ export default function Home() {
       </section>
 
               {/* Client Testimonials */}
-       <section className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
-         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-           <div className="text-center mb-16">
-             <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-               </svg>
-               What Our Clients Say
-             </div>
-             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">Trusted by Leading Companies</h2>
-             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-               Don&apos;t just take our word for it. Here&apos;s what our valued clients have to say about our security services.
-             </p>
-           </div>
+       <section className="py-20 relative overflow-hidden" style={{ backgroundImage: "url('/trustedLeadingCompanies.png')", backgroundSize: 'cover', backgroundPosition: 'top' }}>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-transparent"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 bg-white/20 text-white px-4 py-2 rounded-full text-sm font-medium mb-6 border border-white/40">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+              </svg>
+              What Our Clients Say
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6" style={{textShadow:'0 2px 6px rgba(0,0,0,0.35)'}}>
+              Trusted by Leading Companies
+            </h2>
+            <p className="text-lg sm:text-xl text-white/85 max-w-3xl mx-auto leading-relaxed">
+              Don&apos;t just take our word for it. Here&apos;s what our valued clients have to say about our security services.
+            </p>
+          </div>
            
            <TestimonialCarousel />
          </div>

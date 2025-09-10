@@ -24,48 +24,56 @@ export default function Services() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
-                <img src="/s1.png" alt="Security Guards" className="w-16 h-16 object-cover" />
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+              <div className="h-64 w-full overflow-hidden">
+                <img src="/s1.png" alt="Security Guards" className="w-full h-full object-cover object-top" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Security Guards</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Licensed, uniformed guards for societies, offices, retail and industrial premises. 
-                Vigilance, visitor management, access control, and daily reporting.
-              </p>
+              <div className="p-8 text-left">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Security Guards</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Licensed, uniformed guards for societies, offices, retail and industrial premises.
+                  Vigilance, visitor management, access control, and daily reporting.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
-                <img src="/s2.png" alt="Bouncers" className="w-16 h-16 object-cover" />
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+              <div className="h-64 w-full overflow-hidden">
+                <img src="/s2.png" alt="Bouncers" className="w-full h-full object-cover object-top" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Bouncers</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Trained event bouncers for nightclubs, concerts, corporate events, and VIP protection. 
-                Crowd control, entry checks, and emergency response.
-              </p>
+              <div className="p-8 text-left">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Bouncers</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Trained event bouncers for nightclubs, concerts, corporate events, and VIP protection.
+                  Crowd control, entry checks, and emergency response.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
-                <img src="/s3.png" alt="Private Bouncers & Security" className="w-16 h-16 object-cover" />
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+              <div className="h-64 w-full overflow-hidden">
+                <img src="/s3.png" alt="Private Bouncers & Security" className="w-full h-full object-cover object-top" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Private Bouncers & Security</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Professional private bouncers and security personnel for VIP events, private parties, 
-                and exclusive venues. Discreet protection with trained personnel matching your requirements.
-              </p>
+              <div className="p-8 text-left">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Private Bouncers & Security</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Professional private bouncers and security personnel for VIP events, private parties,
+                  and exclusive venues. Discreet protection with trained personnel matching your requirements.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
-                <img src="/s4.png" alt="Manpower Supply" className="w-16 h-16 object-cover" />
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+              <div className="h-64 w-full overflow-hidden">
+                <img src="/s4.png" alt="Manpower Supply" className="w-full h-full object-cover object-top" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Manpower Supply</h3>
-              <p className="text-gray-600 leading-relaxed">
-                On-demand manpower for short and long-term engagements with reliable attendance 
-                and backup coverage for various operational needs.
-              </p>
+              <div className="p-8 text-left">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Manpower Supply</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  On-demand manpower for short and long-term engagements with reliable attendance
+                  and backup coverage for various operational needs.
+                </p>
+              </div>
             </div>
           </div>
         </div>

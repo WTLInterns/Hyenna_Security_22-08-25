@@ -104,7 +104,7 @@ export default function TestimonialCarousel() {
   return (
     <div className="relative max-w-4xl mx-auto">
       {/* Main Testimonial */}
-      <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 min-h-[300px] flex flex-col justify-between">
+      <div className="rounded-2xl p-8 shadow-2xl border border-white/40 bg-white/80 backdrop-blur-sm min-h-[300px] flex flex-col justify-between">
         <div>
           <div className="flex items-center mb-6">
             <div className="flex">
@@ -129,7 +129,7 @@ export default function TestimonialCarousel() {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors z-10"
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full shadow-xl flex items-center justify-center transition-colors z-10 bg-white/80 hover:bg-white border border-white/60 backdrop-blur-sm"
         aria-label="Previous testimonial"
       >
         <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -139,7 +139,7 @@ export default function TestimonialCarousel() {
 
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors z-10"
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full shadow-xl flex items-center justify-center transition-colors z-10 bg-white/80 hover:bg-white border border-white/60 backdrop-blur-sm"
         aria-label="Next testimonial"
       >
         <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
