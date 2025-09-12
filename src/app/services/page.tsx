@@ -1,4 +1,5 @@
-'use client'
+"use client";
+import Image from "next/image";
 
 export default function Services() {
   return (
@@ -26,7 +27,7 @@ export default function Services() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
               <div className="h-64 w-full overflow-hidden">
-                <img src="/s1.png" alt="Security Guards" className="w-full h-full object-cover object-top" />
+                <Image src="/s1.png" alt="Security Guards" width={400} height={256} className="w-full h-full object-cover object-top" />
               </div>
               <div className="p-8 text-left">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Security Guards</h3>
@@ -39,7 +40,7 @@ export default function Services() {
 
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
               <div className="h-64 w-full overflow-hidden">
-                <img src="/s2.png" alt="Bouncers" className="w-full h-full object-cover object-top" />
+                <Image src="/s2.png" alt="Bouncers" width={400} height={256} className="w-full h-full object-cover object-top" />
               </div>
               <div className="p-8 text-left">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Bouncers</h3>
@@ -52,7 +53,7 @@ export default function Services() {
 
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
               <div className="h-64 w-full overflow-hidden">
-                <img src="/s3.png" alt="Private Bouncers & Security" className="w-full h-full object-cover object-top" />
+                <Image src="/s3.png" alt="Private Bouncers & Security" width={400} height={256} className="w-full h-full object-cover object-top" />
               </div>
               <div className="p-8 text-left">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Private Bouncers & Security</h3>
@@ -65,7 +66,7 @@ export default function Services() {
 
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
               <div className="h-64 w-full overflow-hidden">
-                <img src="/s4.png" alt="Manpower Supply" className="w-full h-full object-cover object-top" />
+                <Image src="/s4.png" alt="Manpower Supply" width={400} height={256} className="w-full h-full object-cover object-top" />
               </div>
               <div className="p-8 text-left">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Manpower Supply</h3>

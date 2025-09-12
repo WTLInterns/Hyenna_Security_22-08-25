@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -57,7 +58,7 @@ export default function Header() {
        <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
          <Link href="/" className="flex items-center gap-3 group" onClick={closeMenu}>
            <div className="h-12 w-12 rounded-full overflow-hidden shadow-sm group-hover:shadow-md transition-shadow bg-white relative">
-             <img src="/logo.jpg" alt="HYENNA SECURITY SERVICE" className="absolute inset-0 h-full w-full object-cover object-center" style={{ transform: 'scale(1.1)', transformOrigin: 'center' }} />
+             <Image src="/logo.jpg" alt="HYENNA SECURITY SERVICE" width={48} height={48} className="absolute inset-0 h-full w-full object-cover object-center" style={{ transform: 'scale(1.1)', transformOrigin: 'center' }} />
            </div>
            <div className="hidden sm:block">
              <span className="font-bold text-lg text-gray-800 group-hover:text-blue-600 transition-colors">

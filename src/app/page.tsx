@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import AnimatedCounter from '../components/AnimatedCounter'
 import LoadingSpinner from '../components/LoadingSpinner'
 import TestimonialCarousel from '../components/TestimonialCarousel'
+import Image from 'next/image'
 
 export default function Home() {
   const [slide, setSlide] = useState(0)
@@ -44,16 +45,18 @@ export default function Home() {
         {/* Slides */}
         <div className="absolute inset-0">
           {images.map((src, idx) => (
-            <img
+            <Image
               key={src}
-              src={src}
+              src={src.startsWith('/') ? src : `/${src}`}
               alt={`Background ${idx + 1}`}
+              fill
               className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1200 ${
                 idx === slide ? 'opacity-100' : 'opacity-0'
               } ${
-                // Custom positioning for gallery4.jpg to ensure proper fit
                 src === '/gallery4.jpg' ? 'object-center' : 'object-top'
               }`}
+              sizes="100vw"
+              priority={idx === slide}
             />
           ))}
           {/* Dark gradient overlay for better text readability */}
@@ -67,7 +70,7 @@ export default function Home() {
               <div className="animate-fade-in-up">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-tight text-white mb-6">
                   <span className="block">HYENNA</span>
-                  <span className="block text-blue-300">SECURITY SERVICES</span>
+                  <span className="block text-blue-300">SECURITY SERVICE</span>
                 </h1>
               </div>
               <div className="animate-fade-in-up animation-delay-200">
@@ -240,7 +243,7 @@ export default function Home() {
            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
              <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-blue-100 hover:shadow-xl transition-all group">
                <div className="h-64 w-full overflow-hidden">
-                 <img src="/swp1.png" alt="Security Guards" className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-300" />
+                 <Image src="/swp1.png" alt="Security Guards" width={400} height={256} className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-300" />
                </div>
                <div className="p-6 text-left">
                  <h3 className="text-xl font-bold text-gray-900 mb-2">Security Guards</h3>
@@ -250,7 +253,7 @@ export default function Home() {
              
              <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-blue-100 hover:shadow-xl transition-all group">
                <div className="h-64 w-full overflow-hidden">
-                 <img src="/swp2.png" alt="Event Bouncers" className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-300" />
+                 <Image src="/swp2.png" alt="Event Bouncers" width={400} height={256} className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-300" />
                </div>
                <div className="p-6 text-left">
                  <h3 className="text-xl font-bold text-gray-900 mb-2">Event Bouncers</h3>
@@ -260,7 +263,7 @@ export default function Home() {
              
              <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-blue-100 hover:shadow-xl transition-all group">
                <div className="h-64 w-full overflow-hidden">
-                 <img src="/swp3.png" alt="Staffing Solutions" className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-300" />
+                 <Image src="/swp3.png" alt="Staffing Solutions" width={400} height={256} className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-300" />
                </div>
                <div className="p-6 text-left">
                  <h3 className="text-xl font-bold text-gray-900 mb-2">Staffing Solutions</h3>
@@ -270,7 +273,7 @@ export default function Home() {
              
              <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-blue-100 hover:shadow-xl transition-all group">
                <div className="h-64 w-full overflow-hidden">
-                 <img src="/swp4.png" alt="Private Security" className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-300" />
+                 <Image src="/swp4.png" alt="Private Security" width={400} height={256} className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-300" />
                </div>
                <div className="p-6 text-left">
                  <h3 className="text-xl font-bold text-gray-900 mb-2">Private Security</h3>
@@ -302,7 +305,7 @@ export default function Home() {
            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
               <div className="h-64 w-full overflow-hidden">
-                <img src="/ils1.png" alt="Trusted & Reliable" className="w-full h-full object-cover object-top" />
+                <Image src="/ils1.png" alt="Trusted & Reliable" width={400} height={256} className="w-full h-full object-cover object-top" />
               </div>
               <div className="p-8">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Trusted & Reliable</h3>
@@ -314,7 +317,7 @@ export default function Home() {
             </div>
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
               <div className="h-64 w-full overflow-hidden">
-                <img src="/ils2.png" alt="Quick Response" className="w-full h-full object-cover object-top" />
+                <Image src="/ils2.png" alt="Quick Response" width={400} height={256} className="w-full h-full object-cover object-top" />
               </div>
               <div className="p-8">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Quick Response</h3>
@@ -326,7 +329,7 @@ export default function Home() {
             </div>
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
               <div className="h-64 w-full overflow-hidden">
-                <img src="/ils3.png" alt="24/7 Availability" className="w-full h-full object-cover object-top" />
+                <Image src="/ils3.png" alt="24/7 Availability" width={400} height={256} className="w-full h-full object-cover object-top" />
               </div>
               <div className="p-8">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">24/7 Availability</h3>

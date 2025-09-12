@@ -41,7 +41,7 @@ const testimonials: Testimonial[] = [
     name: "Sunita Desai",
     location: "Nashik, Maharashtra",
     rating: 5,
-    text: "Outstanding service! The security guards are professional and courteous. We feel completely safe with HYENNA's security services at our residential complex.",
+    text: "Outstanding service! The security guards are professional and courteous. We feel completely safe with HYENNA's security service at our residential complex.",
     avatar: "S"
   }
 ]

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "../components/Header";
+import Image from "next/image";
 import FloatingActionButtons from "../components/FloatingActionButtons";
 import ScrollToTop from "../components/ScrollToTop";
 import "./globals.css";
@@ -34,7 +35,7 @@ export default function RootLayout({
               {/* Company Info - Left Side */}
               <div className="lg:col-span-2">
                 <div className="flex flex-col sm:flex-row items-start gap-4 mb-6">
-                  <img src="/logo.jpg" alt="HYENNA SECURITY SERVICE" className="h-16 w-16 sm:h-20 sm:w-20 rounded-full object-cover flex-shrink-0 shadow-lg mx-auto sm:mx-0" />
+                  <Image src="/logo.jpg" alt="HYENNA SECURITY SERVICE" width={80} height={80} className="h-16 w-16 sm:h-20 sm:w-20 rounded-full object-cover flex-shrink-0 shadow-lg mx-auto sm:mx-0" />
                   <div className="text-center sm:text-left">
                     <h3 className="font-bold text-xl sm:text-2xl text-gray-900 mb-3">HYENNA SECURITY</h3>
                     <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-md">

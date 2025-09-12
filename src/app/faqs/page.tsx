@@ -8,7 +8,7 @@ export default function FAQs() {
      const faqs = [
      {
        question: "What services does HYENNA SECURITY SERVICE provide?",
-       answer: "We provide comprehensive security solutions including security guards, lady guards, event bouncers, housekeeping services, and manpower staffing. Our services are available for IT companies, hospitals, educational institutions, industrial facilities, and corporate offices."
+       answer: "We provide comprehensive security solutions including security guards, lady guards, event bouncers and manpower staffing. Our services are available for IT companies, hospitals, educational institutions, industrial facilities, and corporate offices."
      },
      {
        question: "How quickly can you deploy security personnel?",
