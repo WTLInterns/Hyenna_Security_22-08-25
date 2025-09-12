@@ -6,7 +6,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "HYENNA SECURITY SERVICES",
+  title: "HYENNA SECURITY SERVICE",
   description: "Security guards, bouncers, staffing and manpower supply.",
 };
 
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const whatsappNumber = "9284490400";
-  const whatsappMsg = encodeURIComponent("Hi HYENNA SECURITY SERVICES, I need security services. Please contact me.");
+  const whatsappMsg = encodeURIComponent("Hi HYENNA SECURITY SERVICE, I need security services. Please contact me.");
   const whatsappHref = `https://wa.me/${whatsappNumber}?text=${whatsappMsg}`;
 
   return (
@@ -34,7 +34,7 @@ export default function RootLayout({
               {/* Company Info - Left Side */}
               <div className="lg:col-span-2">
                 <div className="flex flex-col sm:flex-row items-start gap-4 mb-6">
-                  <img src="/logo.jpg" alt="HYENNA SECURITY SERVICES" className="h-16 w-16 sm:h-20 sm:w-20 rounded-full object-cover flex-shrink-0 shadow-lg mx-auto sm:mx-0" />
+                  <img src="/logo.jpg" alt="HYENNA SECURITY SERVICE" className="h-16 w-16 sm:h-20 sm:w-20 rounded-full object-cover flex-shrink-0 shadow-lg mx-auto sm:mx-0" />
                   <div className="text-center sm:text-left">
                     <h3 className="font-bold text-xl sm:text-2xl text-gray-900 mb-3">HYENNA SECURITY</h3>
                     <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-md">
@@ -109,7 +109,7 @@ export default function RootLayout({
             <div className="border-t border-gray-300 mt-10 pt-6">
               <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                 <p className="text-sm text-gray-600">
-                  © {new Date().getFullYear()} HYENNA SECURITY SERVICES. All rights reserved.
+                  © {new Date().getFullYear()} HYENNA SECURITY SERVICE. All rights reserved.
                 </p>
 
                 {/* Social Media Icons */}

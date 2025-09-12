@@ -106,7 +106,7 @@ export default function WhyUs() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Our Operation</h2>
             <p className="text-xl text-red-100 max-w-3xl mx-auto">
-              At HYENNA SECURITY SERVICES, we specialize in complete security services in Maharashtra, 
+              At HYENNA SECURITY SERVICE, we specialize in complete security services in Maharashtra, 
               including meticulous recruitment, thorough training, and effective monitoring. 
               Our dedicated team guarantees security by carefully selecting and training personnel 
               to meet the highest standards.

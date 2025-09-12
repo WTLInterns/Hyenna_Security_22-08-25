@@ -7,7 +7,7 @@ export default function FAQs() {
 
      const faqs = [
      {
-       question: "What services does HYENNA SECURITY SERVICES provide?",
+       question: "What services does HYENNA SECURITY SERVICE provide?",
        answer: "We provide comprehensive security solutions including security guards, lady guards, event bouncers, housekeeping services, and manpower staffing. Our services are available for IT companies, hospitals, educational institutions, industrial facilities, and corporate offices."
      },
      {
@@ -66,7 +66,7 @@ export default function FAQs() {
              </div>
              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Common Questions</h1>
              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-               Get answers to the most frequently asked questions about HYENNA SECURITY SERVICES
+               Get answers to the most frequently asked questions about HYENNA SECURITY SERVICE
              </p>
           </div>
         </div>
@@ -109,7 +109,7 @@ export default function FAQs() {
                      <div className="text-center mb-16">
              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Security Information</h2>
              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-               Important information about HYENNA SECURITY SERVICES
+               Important information about HYENNA SECURITY SERVICE
              </p>
            </div>
           

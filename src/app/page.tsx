@@ -108,7 +108,7 @@ export default function Home() {
              </div>
              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Trusted Security Services Provider in Maharashtra</h2>
              <p className="text-xl text-gray-100 max-w-4xl mx-auto leading-relaxed mb-8">
-               HYENNA SECURITY SERVICES is a distinguished leader in the private security industry, providing professional,
+               HYENNA SECURITY SERVICE is a distinguished leader in the private security industry, providing professional,
                effective, and technologically advanced security solutions. Since our inception, we have built a strong
                reputation for excellence in security services and integrated facility management.
              </p>
@@ -387,7 +387,7 @@ export default function Home() {
              </div>
              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">How We Work</h2>
              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-               Getting started with HYENNA SECURITY SERVICES is simple and straightforward. Here&apos;s our proven process.
+               Getting started with HYENNA SECURITY SERVICE is simple and straightforward. Here&apos;s our proven process.
              </p>
            </div>
            
@@ -449,7 +449,7 @@ export default function Home() {
              <div className="text-center">
                <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Secure Your Business?</h2>
                <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8 leading-relaxed">
-                 Join 100+ satisfied clients who trust HYENNA SECURITY SERVICES for their security needs. 
+                 Join 100+ satisfied clients who trust HYENNA SECURITY SERVICE for their security needs. 
                  Get a free consultation and customized security plan today.
                </p>
                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

@@ -17,7 +17,7 @@ const testimonials: Testimonial[] = [
     name: "Rajesh Kumar",
     location: "Mumbai, Maharashtra",
     rating: 5,
-    text: "HYENNA SECURITY SERVICES has been providing excellent security for our corporate office for over 3 years. Their guards are professional, well-trained, and always punctual. Highly recommended!",
+    text: "HYENNA SECURITY SERVICE has been providing excellent security for our corporate office for over 3 years. Their guards are professional, well-trained, and always punctual. Highly recommended!",
     avatar: "R"
   },
   {

@@ -43,7 +43,7 @@ export default function Header() {
 
   const handleWhatsAppRedirect = () => {
     const phoneNumber = '9284490400'
-    const message = 'Hello! I am interested in getting a quote for security services from HYENNA SECURITY SERVICES.'
+    const message = 'Hello! I am interested in getting a quote for security services from HYENNA SECURITY SERVICE.'
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, '_blank')
   }
@@ -57,7 +57,7 @@ export default function Header() {
        <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
          <Link href="/" className="flex items-center gap-3 group" onClick={closeMenu}>
            <div className="h-12 w-12 rounded-full overflow-hidden shadow-sm group-hover:shadow-md transition-shadow bg-white relative">
-             <img src="/logo.jpg" alt="HYENNA SECURITY SERVICES" className="absolute inset-0 h-full w-full object-cover object-center" style={{ transform: 'scale(1.1)', transformOrigin: 'center' }} />
+             <img src="/logo.jpg" alt="HYENNA SECURITY SERVICE" className="absolute inset-0 h-full w-full object-cover object-center" style={{ transform: 'scale(1.1)', transformOrigin: 'center' }} />
            </div>
            <div className="hidden sm:block">
              <span className="font-bold text-lg text-gray-800 group-hover:text-blue-600 transition-colors">

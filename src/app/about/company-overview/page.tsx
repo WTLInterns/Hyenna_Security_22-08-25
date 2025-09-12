@@ -20,7 +20,7 @@ export default function CompanyOverview() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Who We Are</h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                HYENNA SECURITY SERVICES is a distinguished leader in the private security industry, 
+                HYENNA SECURITY SERVICE is a distinguished leader in the private security industry, 
                 providing professional, effective, and technologically advanced security solutions. 
                 Since our inception, we have built a strong reputation for excellence in security 
                 services and integrated facility management.

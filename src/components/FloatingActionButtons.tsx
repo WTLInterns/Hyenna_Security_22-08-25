@@ -1,6 +1,6 @@
 export default function FloatingActionButtons() {
   const whatsappNumber = "9284490400"
-  const whatsappMsg = encodeURIComponent("Hi HYENNA SECURITY SERVICES, I need security services. Please contact me.")
+  const whatsappMsg = encodeURIComponent("Hi HYENNA SECURITY SERVICE, I need security services. Please contact me.")
   const whatsappHref = `https://wa.me/${whatsappNumber}?text=${whatsappMsg}`
 
   return (
